@@ -1,0 +1,4 @@
+t1 = 5
+t2 = b * t1
+t3 = a + t2
+resultado = t3

@@ -1,0 +1,18 @@
+CC = gcc
+CFLAGS = -Wall -Iinclude
+SRC = src/main.c src/lexer.c
+OUT = build/compiler
+
+all: $(OUT)
+
+$(OUT): $(SRC)
+	mkdir build
+	
+
+	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
+
+run: all
+	./$(OUT)
+
+clean:
+	del /s /q build\*
